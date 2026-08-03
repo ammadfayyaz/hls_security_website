@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Shield, Menu, X, Phone, MessageCircle, ChevronUp } from "lucide-react";
+import { Menu, X, Phone, MessageCircle, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 /**
  * HLS Security — Sentinel Noir Design System
  * Layout: Sticky transparent navigation with scroll-shrink behavior
- * Dark theme with electric blue accent (#009DFF)
+ * Dark theme with bold red accent (#CC0000)
  */
 
 const navLinks = [
@@ -49,14 +49,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       >
         <nav className="container flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="relative">
-              <Shield className="w-8 h-8 text-[#009DFF] transition-transform group-hover:scale-110" strokeWidth={2.5} />
-              <div className="absolute inset-0 bg-[#009DFF]/20 blur-lg rounded-full" />
-            </div>
-            <span className="font-display text-2xl font-bold tracking-tight text-white">
-              HLS
-            </span>
+          <Link href="/" className="flex items-center group">
+            <img
+              src="/manus-storage/HLSLogo-Transparent_2483afd8.webp"
+              alt="HLS Security"
+              className="h-12 w-auto transition-transform group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Menu */}
@@ -67,13 +65,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 href={link.href}
                 className={`text-sm font-heading font-medium transition-colors duration-200 relative group ${
                   location === link.href
-                    ? "text-[#009DFF]"
+                    ? "text-[#CC0000]"
                     : "text-gray-300 hover:text-white"
                 }`}
               >
                 {link.label}
                 <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-[#009DFF] transition-all duration-300 ${
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-[#CC0000] transition-all duration-300 ${
                     location === link.href ? "w-full" : "w-0 group-hover:w-full"
                   }`}
                 />
@@ -111,7 +109,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   href={link.href}
                   className={`text-base font-heading font-medium transition-colors ${
                     location === link.href
-                      ? "text-[#009DFF]"
+                      ? "text-[#CC0000]"
                       : "text-gray-300 hover:text-white"
                   }`}
                 >
@@ -138,10 +136,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
             {/* Brand */}
             <div className="lg:col-span-2">
-              <div className="flex items-center gap-2.5 mb-4">
-                <Shield className="w-8 h-8 text-[#009DFF]" strokeWidth={2.5} />
-                <span className="font-display text-2xl font-bold text-white">HLS</span>
-              </div>
+              <Link href="/" className="inline-block mb-4">
+                <img
+                  src="/manus-storage/HLSLogo-Transparent_2483afd8.webp"
+                  alt="HLS Security"
+                  className="h-14 w-auto"
+                />
+              </Link>
               <p className="text-gray-400 text-sm leading-relaxed max-w-sm mb-6">
                 Complete electronic security solutions backed by professional 24/7 monitoring and rapid armed response. Protecting what matters most — for homes, businesses, and enterprises.
               </p>
@@ -150,7 +151,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <a
                     key={social}
                     href="#"
-                    className="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-[#009DFF] hover:border-[#009DFF]/30 transition-all duration-200 text-xs font-medium"
+                    className="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-[#CC0000] hover:border-[#CC0000]/30 transition-all duration-200 text-xs font-medium"
                     aria-label={social}
                   >
                     {social[0]}
@@ -165,7 +166,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-3">
                 {navLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="text-sm text-gray-400 hover:text-[#009DFF] transition-colors">
+                    <Link href={link.href} className="text-sm text-gray-400 hover:text-[#CC0000] transition-colors">
                       {link.label}
                     </Link>
                   </li>
@@ -179,7 +180,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-3">
                 {["Intruder Alarms", "24/7 Monitoring", "Armed Response", "CCTV Surveillance", "Fire Detection", "Gate Automation"].map((service) => (
                   <li key={service}>
-                    <Link href="/services" className="text-sm text-gray-400 hover:text-[#009DFF] transition-colors">
+                    <Link href="/services" className="text-sm text-gray-400 hover:text-[#CC0000] transition-colors">
                       {service}
                     </Link>
                   </li>
@@ -196,7 +197,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li>24 Security Plaza, Suite 100</li>
                 <li>Business Hours: 24/7</li>
                 <li className="pt-2">
-                  <a href="/contact" className="text-[#009DFF] hover:text-[#00B8FF] font-medium">
+                  <a href="/contact" className="text-[#CC0000] hover:text-[#E60000] font-medium">
                     Emergency Contact →
                   </a>
                 </li>
@@ -214,7 +215,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 md:w-64 bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-[#009DFF]/50"
+                className="flex-1 md:w-64 bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CC0000]/50"
               />
               <button className="btn-gradient px-5 py-2.5 rounded-lg text-white text-sm font-heading font-semibold whitespace-nowrap">
                 Subscribe
@@ -226,9 +227,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="border-t border-white/5 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-gray-500">© 2026 HLS Security. All rights reserved.</p>
             <div className="flex gap-6">
-              <a href="#" className="text-xs text-gray-500 hover:text-[#009DFF] transition-colors">Privacy Policy</a>
-              <a href="#" className="text-xs text-gray-500 hover:text-[#009DFF] transition-colors">Terms of Service</a>
-              <a href="#" className="text-xs text-gray-500 hover:text-[#009DFF] transition-colors">Cookie Policy</a>
+              <a href="#" className="text-xs text-gray-500 hover:text-[#CC0000] transition-colors">Privacy Policy</a>
+              <a href="#" className="text-xs text-gray-500 hover:text-[#CC0000] transition-colors">Terms of Service</a>
+              <a href="#" className="text-xs text-gray-500 hover:text-[#CC0000] transition-colors">Cookie Policy</a>
             </div>
           </div>
         </div>
@@ -239,7 +240,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {showScrollTop && (
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="w-12 h-12 rounded-full glass-strong flex items-center justify-center text-white hover:text-[#009DFF] hover:border-[#009DFF]/30 transition-all duration-200"
+            className="w-12 h-12 rounded-full glass-strong flex items-center justify-center text-white hover:text-[#CC0000] hover:border-[#CC0000]/30 transition-all duration-200"
             aria-label="Scroll to top"
           >
             <ChevronUp className="w-5 h-5" />
@@ -256,7 +257,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </a>
         <a
           href="tel:+15551002470"
-          className="w-12 h-12 rounded-full btn-gradient flex items-center justify-center text-white shadow-lg shadow-[#009DFF]/30 hover:scale-110 transition-transform duration-200"
+          className="w-12 h-12 rounded-full btn-gradient flex items-center justify-center text-white shadow-lg shadow-[#CC0000]/30 hover:scale-110 transition-transform duration-200"
           aria-label="Call us"
         >
           <Phone className="w-5 h-5" />

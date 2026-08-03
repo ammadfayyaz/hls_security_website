@@ -9,7 +9,7 @@ interface SectionHeadingProps {
 
 /**
  * HLS Security — Reusable Section Heading
- * Dark theme with electric blue accent
+ * Dark theme with bold red accent (#CC0000)
  */
 export default function SectionHeading({ eyebrow, title, subtitle, center = false }: SectionHeadingProps) {
   return (
@@ -22,8 +22,8 @@ export default function SectionHeading({ eyebrow, title, subtitle, center = fals
     >
       {eyebrow && (
         <div className={`flex items-center gap-2 mb-3 ${center ? "justify-center" : ""}`}>
-          <span className="h-px w-8 bg-[#009DFF]" />
-          <span className="text-[#009DFF] text-sm font-heading font-semibold uppercase tracking-wider">
+          <span className="h-px w-8 bg-[#CC0000]" />
+          <span className="text-[#CC0000] text-sm font-heading font-semibold uppercase tracking-wider">
             {eyebrow}
           </span>
         </div>

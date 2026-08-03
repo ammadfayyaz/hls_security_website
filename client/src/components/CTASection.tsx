@@ -20,8 +20,8 @@ export default function CTASection({
     <section className="relative py-24 md:py-32 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 mesh-bg" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#009DFF]/5 to-transparent" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#009DFF]/10 rounded-full blur-[120px]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#CC0000]/5 to-transparent" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#CC0000]/10 rounded-full blur-[120px]" />
 
       <div className="container relative z-10">
         <motion.div
@@ -32,11 +32,11 @@ export default function CTASection({
           className="text-center max-w-3xl mx-auto"
         >
           <div className="flex items-center justify-center gap-2 mb-6">
-            <span className="h-px w-8 bg-[#009DFF]" />
-            <span className="text-[#009DFF] text-sm font-heading font-semibold uppercase tracking-wider">
+            <span className="h-px w-8 bg-[#CC0000]" />
+            <span className="text-[#CC0000] text-sm font-heading font-semibold uppercase tracking-wider">
               Get Started Today
             </span>
-            <span className="h-px w-8 bg-[#009DFF]" />
+            <span className="h-px w-8 bg-[#CC0000]" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             {headline}
@@ -55,7 +55,7 @@ export default function CTASection({
             </a>
             <a
               href="tel:+15551002470"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl glass text-white text-base font-heading font-semibold hover:border-[#009DFF]/30 transition-all duration-200"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl glass text-white text-base font-heading font-semibold hover:border-[#CC0000]/30 transition-all duration-200"
             >
               {secondaryButtonText}
             </a>

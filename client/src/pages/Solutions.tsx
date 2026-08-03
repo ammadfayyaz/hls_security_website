@@ -44,7 +44,7 @@ export default function Solutions() {
       {/* Page Hero */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 mesh-bg" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#009DFF]/10 rounded-full blur-[120px]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#CC0000]/10 rounded-full blur-[120px]" />
         <div className="container relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -53,11 +53,11 @@ export default function Solutions() {
             className="text-center max-w-3xl mx-auto"
           >
             <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="h-px w-8 bg-[#009DFF]" />
-              <span className="text-[#009DFF] text-sm font-heading font-semibold uppercase tracking-wider">
+              <span className="h-px w-8 bg-[#CC0000]" />
+              <span className="text-[#CC0000] text-sm font-heading font-semibold uppercase tracking-wider">
                 Solutions
               </span>
-              <span className="h-px w-8 bg-[#009DFF]" />
+              <span className="h-px w-8 bg-[#CC0000]" />
             </div>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Industry-Specific Security Solutions
@@ -81,15 +81,15 @@ export default function Solutions() {
                   onClick={() => setActiveSolution(i)}
                   className={`glass rounded-xl p-5 text-left transition-all duration-300 group ${
                     activeSolution === i
-                      ? "border-[#009DFF]/30 glow-blue-sm"
-                      : "hover:border-[#009DFF]/20"
+                      ? "border-[#CC0000]/30 glow-red-sm"
+                      : "hover:border-[#CC0000]/20"
                   }`}
                 >
                   <Icon className={`w-6 h-6 mb-3 transition-colors ${
-                    activeSolution === i ? "text-[#009DFF]" : "text-gray-400 group-hover:text-[#009DFF]"
+                    activeSolution === i ? "text-[#CC0000]" : "text-gray-400 group-hover:text-[#CC0000]"
                   }`} />
                   <h4 className={`font-heading text-sm font-semibold transition-colors ${
-                    activeSolution === i ? "text-[#009DFF]" : "text-gray-300 group-hover:text-white"
+                    activeSolution === i ? "text-[#CC0000]" : "text-gray-300 group-hover:text-white"
                   }`}>
                     {sol.name}
                   </h4>
@@ -114,13 +114,13 @@ export default function Solutions() {
               {(() => {
                 const Icon = solutionIcons[solution.name] || Building2;
                 return (
-                  <div className="w-16 h-16 rounded-2xl bg-[#009DFF]/10 flex items-center justify-center">
-                    <Icon className="w-8 h-8 text-[#009DFF]" />
+                  <div className="w-16 h-16 rounded-2xl bg-[#CC0000]/10 flex items-center justify-center">
+                    <Icon className="w-8 h-8 text-[#CC0000]" />
                   </div>
                 );
               })()}
               <div>
-                <div className="text-sm text-[#009DFF] font-heading font-semibold uppercase tracking-wider mb-1">
+                <div className="text-sm text-[#CC0000] font-heading font-semibold uppercase tracking-wider mb-1">
                   Solution {activeSolution + 1} of {solutions.length}
                 </div>
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-white">
@@ -134,13 +134,13 @@ export default function Solutions() {
               {/* Challenges */}
               <div className="glass-strong rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <AlertTriangle className="w-5 h-5 text-[#009DFF]" />
+                  <AlertTriangle className="w-5 h-5 text-[#CC0000]" />
                   <h3 className="font-display text-lg font-bold text-white">Challenges</h3>
                 </div>
                 <ul className="space-y-3">
                   {solution.challenges.map((challenge, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#009DFF] mt-1.5 flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#CC0000] mt-1.5 flex-shrink-0" />
                       {challenge}
                     </li>
                   ))}
@@ -150,13 +150,13 @@ export default function Solutions() {
               {/* Recommended Technologies */}
               <div className="glass-strong rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <Lightbulb className="w-5 h-5 text-[#009DFF]" />
+                  <Lightbulb className="w-5 h-5 text-[#CC0000]" />
                   <h3 className="font-display text-lg font-bold text-white">Recommended Technologies</h3>
                 </div>
                 <ul className="space-y-3">
                   {solution.technologies.map((tech, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
-                      <Check className="w-4 h-4 text-[#009DFF] mt-0.5 flex-shrink-0" />
+                      <Check className="w-4 h-4 text-[#CC0000] mt-0.5 flex-shrink-0" />
                       {tech}
                     </li>
                   ))}
@@ -166,13 +166,13 @@ export default function Solutions() {
               {/* Benefits */}
               <div className="glass-strong rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <TrendingUp className="w-5 h-5 text-[#009DFF]" />
+                  <TrendingUp className="w-5 h-5 text-[#CC0000]" />
                   <h3 className="font-display text-lg font-bold text-white">Benefits</h3>
                 </div>
                 <ul className="space-y-3">
                   {solution.benefits.map((benefit, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
-                      <Check className="w-4 h-4 text-[#009DFF] mt-0.5 flex-shrink-0" />
+                      <Check className="w-4 h-4 text-[#CC0000] mt-0.5 flex-shrink-0" />
                       {benefit}
                     </li>
                   ))}
@@ -206,12 +206,12 @@ export default function Solutions() {
       <section className="py-20 bg-[#0B0B0B] border-y border-white/5">
         <div className="container">
           <div className="glass-strong rounded-3xl p-8 md:p-12 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#009DFF]/10 rounded-full blur-[80px]" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#CC0000]/10 rounded-full blur-[80px]" />
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="h-px w-8 bg-[#009DFF]" />
-                  <span className="text-[#009DFF] text-sm font-heading font-semibold uppercase tracking-wider">
+                  <span className="h-px w-8 bg-[#CC0000]" />
+                  <span className="text-[#CC0000] text-sm font-heading font-semibold uppercase tracking-wider">
                     Free Risk Assessment
                   </span>
                 </div>
@@ -229,7 +229,7 @@ export default function Solutions() {
                     "Detailed proposal with pricing",
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm text-gray-300">
-                      <Check className="w-4 h-4 text-[#009DFF]" />
+                      <Check className="w-4 h-4 text-[#CC0000]" />
                       {item}
                     </li>
                   ))}

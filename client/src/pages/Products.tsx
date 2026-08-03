@@ -45,7 +45,7 @@ export default function Products() {
       {/* Page Hero */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 mesh-bg" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#009DFF]/10 rounded-full blur-[120px]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#CC0000]/10 rounded-full blur-[120px]" />
         <div className="container relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -54,11 +54,11 @@ export default function Products() {
             className="text-center max-w-3xl mx-auto"
           >
             <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="h-px w-8 bg-[#009DFF]" />
-              <span className="text-[#009DFF] text-sm font-heading font-semibold uppercase tracking-wider">
+              <span className="h-px w-8 bg-[#CC0000]" />
+              <span className="text-[#CC0000] text-sm font-heading font-semibold uppercase tracking-wider">
                 Products
               </span>
-              <span className="h-px w-8 bg-[#009DFF]" />
+              <span className="h-px w-8 bg-[#CC0000]" />
             </div>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Enterprise-Grade Security Equipment
@@ -83,7 +83,7 @@ export default function Products() {
                   className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-heading font-medium whitespace-nowrap transition-all duration-200 ${
                     activeCategory === i
                       ? "btn-gradient text-white"
-                      : "glass text-gray-400 hover:text-white hover:border-[#009DFF]/20"
+                      : "glass text-gray-400 hover:text-white hover:border-[#CC0000]/20"
                   }`}
                 >
                   <Icon className="w-4 h-4" />
@@ -118,7 +118,7 @@ export default function Products() {
                     onClick={() => setSelectedProduct(selectedProduct === i ? null : i)}
                     className={`px-3 py-1.5 rounded-lg text-xs font-heading font-medium transition-all ${
                       selectedProduct === i
-                        ? "bg-[#009DFF]/20 text-[#009DFF] border border-[#009DFF]/30"
+                        ? "bg-[#CC0000]/20 text-[#CC0000] border border-[#CC0000]/30"
                         : "glass text-gray-400 hover:text-white"
                     }`}
                   >
@@ -153,7 +153,7 @@ export default function Products() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.06, ease: [0.23, 1, 0.32, 1] }}
                 className={`glass-strong rounded-2xl overflow-hidden transition-all duration-300 ${
-                  selectedProduct === i ? "border-[#009DFF]/30 glow-blue-sm" : "hover:border-[#009DFF]/20"
+                  selectedProduct === i ? "border-[#CC0000]/30 glow-red-sm" : "hover:border-[#CC0000]/20"
                 }`}
               >
                 <div className="p-6">
@@ -166,14 +166,14 @@ export default function Products() {
                   <div className="space-y-1.5 mb-4">
                     {product.features.map((feat, j) => (
                       <div key={j} className="flex items-center gap-2 text-xs text-gray-300">
-                        <Check className="w-3.5 h-3.5 text-[#009DFF] flex-shrink-0" />
+                        <Check className="w-3.5 h-3.5 text-[#CC0000] flex-shrink-0" />
                         {feat}
                       </div>
                     ))}
                   </div>
                   {/* Specs */}
                   <div className="glass rounded-lg p-4 mb-4">
-                    <h5 className="text-xs font-heading font-semibold text-[#009DFF] uppercase tracking-wider mb-2">
+                    <h5 className="text-xs font-heading font-semibold text-[#CC0000] uppercase tracking-wider mb-2">
                       Specifications
                     </h5>
                     <dl className="space-y-1">
@@ -187,7 +187,7 @@ export default function Products() {
                   </div>
                   <a
                     href="/contact"
-                    className="inline-flex items-center gap-1 text-sm font-heading font-semibold text-[#009DFF] hover:text-[#00B8FF] transition-colors group"
+                    className="inline-flex items-center gap-1 text-sm font-heading font-semibold text-[#CC0000] hover:text-[#E60000] transition-colors group"
                   >
                     Request Quote
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -246,7 +246,7 @@ export default function Products() {
                   "Expert consultation included",
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
-                    <ChevronRight className="w-5 h-5 text-[#009DFF]" />
+                    <ChevronRight className="w-5 h-5 text-[#CC0000]" />
                     <span className="text-gray-300">{item}</span>
                   </div>
                 ))}

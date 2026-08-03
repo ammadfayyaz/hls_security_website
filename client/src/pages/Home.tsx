@@ -56,7 +56,7 @@ export default function Home() {
         </div>
 
         {/* Animated scan line */}
-        <div className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#009DFF]/30 to-transparent" style={{ animation: "scan-line 8s linear infinite" }} />
+        <div className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#CC0000]/30 to-transparent" style={{ animation: "scan-line 8s linear infinite" }} />
 
         <div className="container relative z-10 pt-20 pb-16">
           <motion.div
@@ -65,9 +65,17 @@ export default function Home() {
             transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
             className="max-w-4xl"
           >
+            {/* Hero Logo */}
+            <div className="mb-8">
+              <img
+                src="/manus-storage/HLSLogo-Transparent_2483afd8.webp"
+                alt="HLS Security Logo"
+                className="h-20 md:h-24 w-auto"
+              />
+            </div>
             <div className="flex items-center gap-2 mb-6">
-              <span className="h-px w-8 bg-[#009DFF]" />
-              <span className="text-[#009DFF] text-sm font-heading font-semibold uppercase tracking-wider">
+              <span className="h-px w-8 bg-[#CC0000]" />
+              <span className="text-[#CC0000] text-sm font-heading font-semibold uppercase tracking-wider">
                 Complete Protection. Intelligent Security.
               </span>
             </div>
@@ -90,9 +98,9 @@ export default function Home() {
               </a>
               <a
                 href="tel:+15551002470"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl glass text-white text-base font-heading font-semibold hover:border-[#009DFF]/30 transition-all duration-200"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl glass text-white text-base font-heading font-semibold hover:border-[#CC0000]/30 transition-all duration-200"
               >
-                <Phone className="w-5 h-5 text-[#009DFF]" />
+                <Phone className="w-5 h-5 text-[#CC0000]" />
                 Speak to a Security Expert
               </a>
             </div>
@@ -123,7 +131,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: i * 0.08, ease: [0.23, 1, 0.32, 1] }}
                 className="text-center"
               >
-                <div className="font-display text-3xl md:text-4xl font-bold text-[#009DFF] mb-1">
+                <div className="font-display text-3xl md:text-4xl font-bold text-[#CC0000] mb-1">
                   {item.value}
                 </div>
                 <div className="text-sm text-gray-400 font-heading font-medium">
@@ -155,10 +163,10 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, delay: i * 0.12, ease: [0.23, 1, 0.32, 1] }}
-                  className="glass-strong rounded-2xl p-8 hover:border-[#009DFF]/20 transition-all duration-300 group"
+                  className="glass-strong rounded-2xl p-8 hover:border-[#CC0000]/20 transition-all duration-300 group"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-[#009DFF]/10 flex items-center justify-center mb-6 group-hover:bg-[#009DFF]/20 transition-colors">
-                    <Icon className="w-7 h-7 text-[#009DFF]" />
+                  <div className="w-14 h-14 rounded-xl bg-[#CC0000]/10 flex items-center justify-center mb-6 group-hover:bg-[#CC0000]/20 transition-colors">
+                    <Icon className="w-7 h-7 text-[#CC0000]" />
                   </div>
                   <h3 className="font-display text-2xl font-bold text-white mb-3">
                     {service.title}
@@ -169,14 +177,14 @@ export default function Home() {
                   <ul className="space-y-2 mb-6">
                     {service.features.map((feat, j) => (
                       <li key={j} className="flex items-center gap-2 text-sm text-gray-300">
-                        <Check className="w-4 h-4 text-[#009DFF] flex-shrink-0" />
+                        <Check className="w-4 h-4 text-[#CC0000] flex-shrink-0" />
                         {feat}
                       </li>
                     ))}
                   </ul>
                   <a
                     href="/services"
-                    className="inline-flex items-center gap-1 text-sm font-heading font-semibold text-[#009DFF] hover:text-[#00B8FF] transition-colors group/link"
+                    className="inline-flex items-center gap-1 text-sm font-heading font-semibold text-[#CC0000] hover:text-[#E60000] transition-colors group/link"
                   >
                     Learn More
                     <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
@@ -207,11 +215,11 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.08, ease: [0.23, 1, 0.32, 1] }}
-                  className="glass rounded-xl p-6 hover:border-[#009DFF]/20 transition-all duration-300"
+                  className="glass rounded-xl p-6 hover:border-[#CC0000]/20 transition-all duration-300"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-[#009DFF]/10 flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-6 h-6 text-[#009DFF]" />
+                    <div className="w-12 h-12 rounded-lg bg-[#CC0000]/10 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-6 h-6 text-[#CC0000]" />
                     </div>
                     <div>
                       <h4 className="font-display text-lg font-semibold text-white mb-2">
@@ -249,10 +257,10 @@ export default function Home() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.05, ease: [0.23, 1, 0.32, 1] }}
-                  className="glass rounded-xl p-5 hover:border-[#009DFF]/20 hover:bg-white/5 transition-all duration-300 group block"
+                  className="glass rounded-xl p-5 hover:border-[#CC0000]/20 hover:bg-white/5 transition-all duration-300 group block"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-[#009DFF]/10 flex items-center justify-center mb-4 group-hover:bg-[#009DFF]/20 transition-colors">
-                    <Icon className="w-5 h-5 text-[#009DFF]" />
+                  <div className="w-10 h-10 rounded-lg bg-[#CC0000]/10 flex items-center justify-center mb-4 group-hover:bg-[#CC0000]/20 transition-colors">
+                    <Icon className="w-5 h-5 text-[#CC0000]" />
                   </div>
                   <h4 className="font-heading text-sm font-semibold text-white mb-1">
                     {service.title}
@@ -286,9 +294,9 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.05, ease: [0.23, 1, 0.32, 1] }}
-                  className="glass rounded-xl p-5 flex items-center gap-3 hover:border-[#009DFF]/20 transition-all duration-300"
+                  className="glass rounded-xl p-5 flex items-center gap-3 hover:border-[#CC0000]/20 transition-all duration-300"
                 >
-                  <Icon className="w-5 h-5 text-[#009DFF] flex-shrink-0" />
+                  <Icon className="w-5 h-5 text-[#CC0000] flex-shrink-0" />
                   <span className="text-sm font-heading font-medium text-gray-300">
                     {industry}
                   </span>
@@ -320,7 +328,7 @@ export default function Home() {
                 className="relative"
               >
                 <div className="glass-strong rounded-2xl p-8 h-full">
-                  <div className="font-display text-5xl font-bold text-[#009DFF]/20 mb-4">
+                  <div className="font-display text-5xl font-bold text-[#CC0000]/20 mb-4">
                     {item.step}
                   </div>
                   <h4 className="font-display text-xl font-bold text-white mb-2">
@@ -331,7 +339,7 @@ export default function Home() {
                   </p>
                 </div>
                 {i < howItWorks.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-px bg-[#009DFF]/30" />
+                  <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-px bg-[#CC0000]/30" />
                 )}
               </motion.div>
             ))}
@@ -359,15 +367,15 @@ export default function Home() {
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, j) => (
-                    <Star key={j} className="w-4 h-4 text-[#009DFF] fill-[#009DFF]" />
+                    <Star key={j} className="w-4 h-4 text-[#CC0000] fill-[#CC0000]" />
                   ))}
                 </div>
                 <blockquote className="text-lg text-gray-300 leading-relaxed mb-6">
                   "{testimonial.quote}"
                 </blockquote>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#009DFF]/20 flex items-center justify-center">
-                    <span className="text-sm font-bold text-[#009DFF]">
+                  <div className="w-10 h-10 rounded-full bg-[#CC0000]/20 flex items-center justify-center">
+                    <span className="text-sm font-bold text-[#CC0000]">
                       {testimonial.author[0]}
                     </span>
                   </div>
@@ -400,9 +408,9 @@ export default function Home() {
                 <AccordionItem
                   key={i}
                   value={`item-${i}`}
-                  className="glass rounded-xl px-6 border-white/10 data-[state=open]:border-[#009DFF]/20 transition-all"
+                  className="glass rounded-xl px-6 border-white/10 data-[state=open]:border-[#CC0000]/20 transition-all"
                 >
-                  <AccordionTrigger className="text-left font-heading text-base font-semibold text-white hover:text-[#009DFF] transition-colors py-5">
+                  <AccordionTrigger className="text-left font-heading text-base font-semibold text-white hover:text-[#CC0000] transition-colors py-5">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-400 leading-relaxed pb-5">
@@ -440,8 +448,8 @@ export default function Home() {
                     transition={{ duration: 0.4, delay: i * 0.08 }}
                     className="flex items-center gap-3"
                   >
-                    <div className="w-6 h-6 rounded-full bg-[#009DFF]/20 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-4 h-4 text-[#009DFF]" />
+                    <div className="w-6 h-6 rounded-full bg-[#CC0000]/20 flex items-center justify-center flex-shrink-0">
+                      <Check className="w-4 h-4 text-[#CC0000]" />
                     </div>
                     <span className="text-gray-300">{item}</span>
                   </motion.div>

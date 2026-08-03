@@ -46,7 +46,7 @@ export default function Services() {
       {/* Page Hero */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 mesh-bg" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#009DFF]/10 rounded-full blur-[120px]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#CC0000]/10 rounded-full blur-[120px]" />
         <div className="container relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -55,11 +55,11 @@ export default function Services() {
             className="text-center max-w-3xl mx-auto"
           >
             <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="h-px w-8 bg-[#009DFF]" />
-              <span className="text-[#009DFF] text-sm font-heading font-semibold uppercase tracking-wider">
+              <span className="h-px w-8 bg-[#CC0000]" />
+              <span className="text-[#CC0000] text-sm font-heading font-semibold uppercase tracking-wider">
                 Services
               </span>
-              <span className="h-px w-8 bg-[#009DFF]" />
+              <span className="h-px w-8 bg-[#CC0000]" />
             </div>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Professional Security Services
@@ -89,17 +89,17 @@ export default function Services() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1, ease: [0.23, 1, 0.32, 1] }}
-                  className="glass-strong rounded-2xl p-8 text-center hover:border-[#009DFF]/20 transition-all duration-300 group"
+                  className="glass-strong rounded-2xl p-8 text-center hover:border-[#CC0000]/20 transition-all duration-300 group"
                 >
-                  <div className="w-16 h-16 rounded-2xl bg-[#009DFF]/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-[#009DFF]/20 transition-colors">
-                    <Icon className="w-8 h-8 text-[#009DFF]" />
+                  <div className="w-16 h-16 rounded-2xl bg-[#CC0000]/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-[#CC0000]/20 transition-colors">
+                    <Icon className="w-8 h-8 text-[#CC0000]" />
                   </div>
                   <h3 className="font-display text-xl font-bold text-white mb-3">{svc.title}</h3>
                   <p className="text-sm text-gray-400 leading-relaxed mb-4">{svc.description}</p>
                   <ul className="space-y-1.5 text-left">
                     {svc.features.map((feat, j) => (
                       <li key={j} className="flex items-center gap-2 text-xs text-gray-300">
-                        <Check className="w-3.5 h-3.5 text-[#009DFF] flex-shrink-0" />
+                        <Check className="w-3.5 h-3.5 text-[#CC0000] flex-shrink-0" />
                         {feat}
                       </li>
                     ))}
@@ -130,17 +130,17 @@ export default function Services() {
                   onClick={() => setActiveService(i)}
                   className={`w-full text-left px-5 py-4 rounded-xl transition-all duration-200 flex items-center justify-between group ${
                     activeService === i
-                      ? "glass-strong border-[#009DFF]/30"
-                      : "glass hover:border-[#009DFF]/20"
+                      ? "glass-strong border-[#CC0000]/30"
+                      : "glass hover:border-[#CC0000]/20"
                   }`}
                 >
                   <span className={`font-heading text-sm font-medium ${
-                    activeService === i ? "text-[#009DFF]" : "text-gray-300 group-hover:text-white"
+                    activeService === i ? "text-[#CC0000]" : "text-gray-300 group-hover:text-white"
                   }`}>
                     {svc.title}
                   </span>
                   <ArrowRight className={`w-4 h-4 transition-all ${
-                    activeService === i ? "text-[#009DFF] translate-x-0" : "text-gray-600 group-hover:text-gray-400 -translate-x-1"
+                    activeService === i ? "text-[#CC0000] translate-x-0" : "text-gray-600 group-hover:text-gray-400 -translate-x-1"
                   }`} />
                 </button>
               ))}
@@ -174,13 +174,13 @@ export default function Services() {
 
                   {/* Benefits */}
                   <div className="mb-6">
-                    <h4 className="text-sm font-heading font-semibold text-[#009DFF] uppercase tracking-wider mb-3">
+                    <h4 className="text-sm font-heading font-semibold text-[#CC0000] uppercase tracking-wider mb-3">
                       Benefits
                     </h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {service.benefits.map((b, i) => (
                         <div key={i} className="flex items-center gap-2 text-sm text-gray-300">
-                          <Check className="w-4 h-4 text-[#009DFF] flex-shrink-0" />
+                          <Check className="w-4 h-4 text-[#CC0000] flex-shrink-0" />
                           {b}
                         </div>
                       ))}
@@ -189,13 +189,13 @@ export default function Services() {
 
                   {/* Process */}
                   <div className="mb-6">
-                    <h4 className="text-sm font-heading font-semibold text-[#009DFF] uppercase tracking-wider mb-3">
+                    <h4 className="text-sm font-heading font-semibold text-[#CC0000] uppercase tracking-wider mb-3">
                       Process
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {service.process.map((step, i) => (
                         <div key={i} className="flex items-center gap-2">
-                          <span className="w-6 h-6 rounded-full bg-[#009DFF]/20 flex items-center justify-center text-xs font-bold text-[#009DFF]">
+                          <span className="w-6 h-6 rounded-full bg-[#CC0000]/20 flex items-center justify-center text-xs font-bold text-[#CC0000]">
                             {i + 1}
                           </span>
                           <span className="text-sm text-gray-300">{step}</span>
@@ -209,9 +209,9 @@ export default function Services() {
 
                   {/* Response Time */}
                   <div className="glass rounded-lg p-4 mb-6 flex items-center gap-3">
-                    <Clock className="w-5 h-5 text-[#009DFF]" />
+                    <Clock className="w-5 h-5 text-[#CC0000]" />
                     <div>
-                      <span className="text-xs font-heading font-semibold text-[#009DFF] uppercase tracking-wider">
+                      <span className="text-xs font-heading font-semibold text-[#CC0000] uppercase tracking-wider">
                         Response Time
                       </span>
                       <p className="text-sm text-gray-300">{service.responseTime}</p>
@@ -252,14 +252,14 @@ export default function Services() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.06 }}
-                  className="glass rounded-xl p-6 hover:border-[#009DFF]/20 transition-all duration-300 group"
+                  className="glass rounded-xl p-6 hover:border-[#CC0000]/20 transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-[#009DFF]/10 flex items-center justify-center mb-4 group-hover:bg-[#009DFF]/20 transition-colors">
-                    <Icon className="w-6 h-6 text-[#009DFF]" />
+                  <div className="w-12 h-12 rounded-lg bg-[#CC0000]/10 flex items-center justify-center mb-4 group-hover:bg-[#CC0000]/20 transition-colors">
+                    <Icon className="w-6 h-6 text-[#CC0000]" />
                   </div>
                   <h4 className="font-display text-lg font-bold text-white mb-2">{svc.title}</h4>
                   <p className="text-sm text-gray-400 leading-relaxed mb-4">{svc.description}</p>
-                  <a href="/contact" className="text-sm font-heading font-semibold text-[#009DFF] hover:text-[#00B8FF] transition-colors">
+                  <a href="/contact" className="text-sm font-heading font-semibold text-[#CC0000] hover:text-[#E60000] transition-colors">
                     Learn More →
                   </a>
                 </motion.div>
@@ -281,12 +281,12 @@ export default function Services() {
               />
               <div className="mt-8 grid grid-cols-2 gap-4">
                 <div className="glass rounded-xl p-5">
-                  <Phone className="w-5 h-5 text-[#009DFF] mb-2" />
+                  <Phone className="w-5 h-5 text-[#CC0000] mb-2" />
                   <div className="text-sm font-heading font-semibold text-white">24/7 Support</div>
                   <div className="text-xs text-gray-500">+1 (555) 100-2470</div>
                 </div>
                 <div className="glass rounded-xl p-5">
-                  <Clock className="w-5 h-5 text-[#009DFF] mb-2" />
+                  <Clock className="w-5 h-5 text-[#CC0000] mb-2" />
                   <div className="text-sm font-heading font-semibold text-white">Fast Response</div>
                   <div className="text-xs text-gray-500">Within 2 hours</div>
                 </div>

@@ -40,8 +40,8 @@ export default function LeadForm({
           transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
           className="text-center py-12"
         >
-          <div className="w-16 h-16 rounded-full bg-[#009DFF]/20 flex items-center justify-center mx-auto mb-6">
-            <Check className="w-8 h-8 text-[#009DFF]" />
+          <div className="w-16 h-16 rounded-full bg-[#CC0000]/20 flex items-center justify-center mx-auto mb-6">
+            <Check className="w-8 h-8 text-[#CC0000]" />
           </div>
           <h3 className="font-display text-2xl font-bold text-white mb-2">Thank You!</h3>
           <p className="text-gray-400">Your request has been received. One of our security experts will contact you within 24 hours.</p>
@@ -57,7 +57,7 @@ export default function LeadForm({
                 type="text"
                 required
                 placeholder="John Smith"
-                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-[#009DFF]/50 focus:ring-1 focus:ring-[#009DFF]/30 transition-all"
+                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CC0000]/50 focus:ring-1 focus:ring-[#CC0000]/30 transition-all"
               />
             </div>
             <div>
@@ -68,7 +68,7 @@ export default function LeadForm({
                 type="tel"
                 required
                 placeholder="+1 (555) 000-0000"
-                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-[#009DFF]/50 focus:ring-1 focus:ring-[#009DFF]/30 transition-all"
+                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CC0000]/50 focus:ring-1 focus:ring-[#CC0000]/30 transition-all"
               />
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function LeadForm({
               type="email"
               required
               placeholder="john@company.com"
-              className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-[#009DFF]/50 focus:ring-1 focus:ring-[#009DFF]/30 transition-all"
+              className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CC0000]/50 focus:ring-1 focus:ring-[#CC0000]/30 transition-all"
             />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -89,7 +89,7 @@ export default function LeadForm({
                 Property Type
               </label>
               <select
-                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-[#009DFF]/50 focus:ring-1 focus:ring-[#009DFF]/30 transition-all"
+                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-[#CC0000]/50 focus:ring-1 focus:ring-[#CC0000]/30 transition-all"
               >
                 <option value="" className="bg-[#161616]">Select type</option>
                 <option value="residential" className="bg-[#161616]">Residential</option>
@@ -103,7 +103,7 @@ export default function LeadForm({
                 Service Interest
               </label>
               <select
-                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-[#009DFF]/50 focus:ring-1 focus:ring-[#009DFF]/30 transition-all"
+                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-[#CC0000]/50 focus:ring-1 focus:ring-[#CC0000]/30 transition-all"
               >
                 <option value="" className="bg-[#161616]">Select service</option>
                 <option value="intruder" className="bg-[#161616]">Intruder Alarm Systems</option>
@@ -123,7 +123,7 @@ export default function LeadForm({
             <textarea
               rows={3}
               placeholder="Tell us about your security needs..."
-              className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-[#009DFF]/50 focus:ring-1 focus:ring-[#009DFF]/30 transition-all resize-none"
+              className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CC0000]/50 focus:ring-1 focus:ring-[#CC0000]/30 transition-all resize-none"
             />
           </div>
           <button

@@ -23,7 +23,7 @@ export default function Contact() {
       {/* Page Hero */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 mesh-bg" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#009DFF]/10 rounded-full blur-[120px]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#CC0000]/10 rounded-full blur-[120px]" />
         <div className="container relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -32,11 +32,11 @@ export default function Contact() {
             className="text-center max-w-3xl mx-auto"
           >
             <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="h-px w-8 bg-[#009DFF]" />
-              <span className="text-[#009DFF] text-sm font-heading font-semibold uppercase tracking-wider">
+              <span className="h-px w-8 bg-[#CC0000]" />
+              <span className="text-[#CC0000] text-sm font-heading font-semibold uppercase tracking-wider">
                 Contact Us
               </span>
-              <span className="h-px w-8 bg-[#009DFF]" />
+              <span className="h-px w-8 bg-[#CC0000]" />
             </div>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Let's Secure What Matters Most
@@ -58,13 +58,13 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
-              className="glass-strong rounded-2xl p-6 hover:border-[#009DFF]/20 transition-all duration-300 group"
+              className="glass-strong rounded-2xl p-6 hover:border-[#CC0000]/20 transition-all duration-300 group"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#009DFF]/10 flex items-center justify-center mb-4 group-hover:bg-[#009DFF]/20 transition-colors">
-                <Phone className="w-6 h-6 text-[#009DFF]" />
+              <div className="w-12 h-12 rounded-xl bg-[#CC0000]/10 flex items-center justify-center mb-4 group-hover:bg-[#CC0000]/20 transition-colors">
+                <Phone className="w-6 h-6 text-[#CC0000]" />
               </div>
               <h3 className="font-heading text-sm font-semibold text-white uppercase tracking-wider mb-2">Phone</h3>
-              <a href="tel:+15551002470" className="text-lg text-gray-300 hover:text-[#009DFF] transition-colors">
+              <a href="tel:+15551002470" className="text-lg text-gray-300 hover:text-[#CC0000] transition-colors">
                 +1 (555) 100-2470
               </a>
               <p className="text-xs text-gray-500 mt-1">24/7 Support Line</p>
@@ -76,13 +76,13 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1, ease: [0.23, 1, 0.32, 1] }}
-              className="glass-strong rounded-2xl p-6 hover:border-[#009DFF]/20 transition-all duration-300 group"
+              className="glass-strong rounded-2xl p-6 hover:border-[#CC0000]/20 transition-all duration-300 group"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#009DFF]/10 flex items-center justify-center mb-4 group-hover:bg-[#009DFF]/20 transition-colors">
-                <Mail className="w-6 h-6 text-[#009DFF]" />
+              <div className="w-12 h-12 rounded-xl bg-[#CC0000]/10 flex items-center justify-center mb-4 group-hover:bg-[#CC0000]/20 transition-colors">
+                <Mail className="w-6 h-6 text-[#CC0000]" />
               </div>
               <h3 className="font-heading text-sm font-semibold text-white uppercase tracking-wider mb-2">Email</h3>
-              <a href="mailto:info@hls-security.com" className="text-lg text-gray-300 hover:text-[#009DFF] transition-colors break-all">
+              <a href="mailto:info@hls-security.com" className="text-lg text-gray-300 hover:text-[#CC0000] transition-colors break-all">
                 info@hls-security.com
               </a>
               <p className="text-xs text-gray-500 mt-1">Response within 24h</p>
@@ -143,8 +143,8 @@ export default function Contact() {
               <div className="mt-8 space-y-6">
                 <div className="glass rounded-xl p-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-[#009DFF]/10 flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-5 h-5 text-[#009DFF]" />
+                    <div className="w-10 h-10 rounded-lg bg-[#CC0000]/10 flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-5 h-5 text-[#CC0000]" />
                     </div>
                     <div>
                       <h4 className="font-heading text-sm font-semibold text-white mb-1">Office Address</h4>
@@ -159,8 +159,8 @@ export default function Contact() {
 
                 <div className="glass rounded-xl p-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-[#009DFF]/10 flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-5 h-5 text-[#009DFF]" />
+                    <div className="w-10 h-10 rounded-lg bg-[#CC0000]/10 flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-5 h-5 text-[#CC0000]" />
                     </div>
                     <div>
                       <h4 className="font-heading text-sm font-semibold text-white mb-1">Business Hours</h4>
@@ -171,15 +171,15 @@ export default function Contact() {
                         </div>
                         <div className="flex justify-between">
                           <span>Monitoring Center</span>
-                          <span className="text-[#009DFF]">24/7/365</span>
+                          <span className="text-[#CC0000]">24/7/365</span>
                         </div>
                         <div className="flex justify-between">
                           <span>Armed Response</span>
-                          <span className="text-[#009DFF]">24/7/365</span>
+                          <span className="text-[#CC0000]">24/7/365</span>
                         </div>
                         <div className="flex justify-between">
                           <span>Emergency Repairs</span>
-                          <span className="text-[#009DFF]">24/7/365</span>
+                          <span className="text-[#CC0000]">24/7/365</span>
                         </div>
                       </div>
                     </div>
@@ -188,8 +188,8 @@ export default function Contact() {
 
                 <div className="glass rounded-xl p-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-[#009DFF]/10 flex items-center justify-center flex-shrink-0">
-                      <ShieldCheck className="w-5 h-5 text-[#009DFF]" />
+                    <div className="w-10 h-10 rounded-lg bg-[#CC0000]/10 flex items-center justify-center flex-shrink-0">
+                      <ShieldCheck className="w-5 h-5 text-[#CC0000]" />
                     </div>
                     <div>
                       <h4 className="font-heading text-sm font-semibold text-white mb-1">Why Contact HLS?</h4>
@@ -245,17 +245,17 @@ export default function Contact() {
             {/* Center pin */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
               <div className="relative">
-                <MapPin className="w-12 h-12 text-[#009DFF] mx-auto" fill="#009DFF" fillOpacity={0.2} />
-                <div className="absolute inset-0 bg-[#009DFF]/20 blur-xl rounded-full animate-pulse-glow" />
+                <MapPin className="w-12 h-12 text-[#CC0000] mx-auto" fill="#CC0000" fillOpacity={0.2} />
+                <div className="absolute inset-0 bg-[#CC0000]/20 blur-xl rounded-full animate-pulse-glow" />
               </div>
               <p className="mt-4 font-heading text-sm font-semibold text-white">HLS Security Headquarters</p>
               <p className="text-xs text-gray-500">24 Security Plaza, Suite 100</p>
             </div>
             {/* Corner accents */}
-            <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#009DFF]/30 rounded-tl-lg" />
-            <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-[#009DFF]/30 rounded-tr-lg" />
-            <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-[#009DFF]/30 rounded-bl-lg" />
-            <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#009DFF]/30 rounded-br-lg" />
+            <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#CC0000]/30 rounded-tl-lg" />
+            <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-[#CC0000]/30 rounded-tr-lg" />
+            <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-[#CC0000]/30 rounded-bl-lg" />
+            <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#CC0000]/30 rounded-br-lg" />
           </motion.div>
         </div>
       </section>
@@ -272,12 +272,12 @@ export default function Contact() {
               />
               <div className="mt-8 grid grid-cols-2 gap-4">
                 <div className="glass rounded-xl p-5">
-                  <Calendar className="w-5 h-5 text-[#009DFF] mb-2" />
+                  <Calendar className="w-5 h-5 text-[#CC0000] mb-2" />
                   <div className="text-sm font-heading font-semibold text-white">Flexible Scheduling</div>
                   <div className="text-xs text-gray-500">We work around your hours</div>
                 </div>
                 <div className="glass rounded-xl p-5">
-                  <FileText className="w-5 h-5 text-[#009DFF] mb-2" />
+                  <FileText className="w-5 h-5 text-[#CC0000] mb-2" />
                   <div className="text-sm font-heading font-semibold text-white">Detailed Report</div>
                   <div className="text-xs text-gray-500">Full assessment included</div>
                 </div>

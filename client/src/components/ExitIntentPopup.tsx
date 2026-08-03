@@ -61,8 +61,8 @@ export default function ExitIntentPopup() {
             </button>
 
             <div className="text-center">
-              <div className="w-16 h-16 rounded-2xl bg-[#009DFF]/20 flex items-center justify-center mx-auto mb-6">
-                <ShieldCheck className="w-8 h-8 text-[#009DFF]" />
+              <div className="w-16 h-16 rounded-2xl bg-[#CC0000]/20 flex items-center justify-center mx-auto mb-6">
+                <ShieldCheck className="w-8 h-8 text-[#CC0000]" />
               </div>
               <h3 className="font-display text-2xl font-bold text-white mb-3">
                 Wait — Before You Go
@@ -83,7 +83,7 @@ export default function ExitIntentPopup() {
                 <a
                   href="/contact"
                   onClick={handleClose}
-                  className="w-full inline-flex items-center justify-center px-6 py-3 rounded-xl glass text-white text-sm font-heading font-semibold hover:border-[#009DFF]/30 transition-all"
+                  className="w-full inline-flex items-center justify-center px-6 py-3 rounded-xl glass text-white text-sm font-heading font-semibold hover:border-[#CC0000]/30 transition-all"
                 >
                   Book Free Security Assessment
                 </a>
