@@ -21,10 +21,10 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 const categoryImages: Record<string, string> = {
-  "Intruder Alarm Systems": "/manus-storage/alarm-system_c3f8ac60.jpg",
-  "CCTV Systems": "/manus-storage/cctv-camera_4f29d979.jpg",
-  "Electric Fence": "/manus-storage/electric-fence_b23f0c21.jpg",
-  "Fire Detection": "/manus-storage/fire-detection_fddf4d8c.jpg",
+  "Intruder Alarm Systems": "/manus-storage/product-control-panel_0dae52ff.png",
+  "CCTV Systems": "/manus-storage/product-ptz-camera_3d15e3b3.png",
+  "Electric Fence": "/manus-storage/product-energizer_8348abe5.png",
+  "Fire Detection": "/manus-storage/product-smoke-detector_1fb36b49.png",
   "Gate Automation": "/manus-storage/gate-automation_f3863f32.jpg",
   "Home Automation": "/manus-storage/home-automation_e8434804.jpg",
 };
@@ -156,6 +156,16 @@ export default function Products() {
                   selectedProduct === i ? "border-[#CC0000]/30 glow-red-sm" : "hover:border-[#CC0000]/20"
                 }`}
               >
+                {product.image && (
+                  <div className="relative h-44 overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B]/60 to-transparent" />
+                  </div>
+                )}
                 <div className="p-6">
                   <h4 className="font-display text-lg font-bold text-white mb-2">
                     {product.name}
