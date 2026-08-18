@@ -73,20 +73,41 @@ export default function Products() {
       {/* Category Navigation */}
       <section className="sticky top-16 z-30 bg-[#0B0B0B]/90 backdrop-blur-xl border-y border-white/5 py-4">
         <div className="container">
-          <div className="flex items-center gap-2 overflow-x-auto pb-1">
+          {/* Desktop: Grid layout with proper spacing */}
+          <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-6 gap-3">
             {productCategories.map((cat, i) => {
               const Icon = iconMap[cat.icon] || Bell;
               return (
                 <button
                   key={i}
                   onClick={() => { setActiveCategory(i); setSelectedProduct(null); }}
-                  className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-heading font-medium whitespace-nowrap transition-all duration-200 ${
+                  className={`flex items-center justify-center gap-2 px-3 py-3 rounded-lg text-xs lg:text-sm font-heading font-medium transition-all duration-200 ${
+                    activeCategory === i
+                      ? "btn-gradient text-white shadow-lg shadow-[#CC0000]/20"
+                      : "glass text-gray-400 hover:text-white hover:border-[#CC0000]/30"
+                  }`}
+                >
+                  <Icon className="w-4 h-4 flex-shrink-0" />
+                  <span className="leading-tight">{cat.name}</span>
+                </button>
+              );
+            })}
+          </div>
+          {/* Mobile: Horizontal scroll with proper spacing */}
+          <div className="flex md:hidden items-center gap-3 overflow-x-auto pb-1 scrollbar-hide">
+            {productCategories.map((cat, i) => {
+              const Icon = iconMap[cat.icon] || Bell;
+              return (
+                <button
+                  key={i}
+                  onClick={() => { setActiveCategory(i); setSelectedProduct(null); }}
+                  className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-heading font-medium whitespace-nowrap flex-shrink-0 transition-all duration-200 ${
                     activeCategory === i
                       ? "btn-gradient text-white"
                       : "glass text-gray-400 hover:text-white hover:border-[#CC0000]/20"
                   }`}
                 >
-                  <Icon className="w-4 h-4" />
+                  <Icon className="w-4 h-4 flex-shrink-0" />
                   {cat.name}
                 </button>
               );
