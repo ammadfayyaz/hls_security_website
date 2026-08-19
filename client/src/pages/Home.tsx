@@ -44,68 +44,17 @@ export default function Home() {
     <SEO path="/" />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        {/* Background */}
-        <div className="absolute inset-0">
+        {/* Background - Full Banner Image */}
+        <div className="absolute inset-0 flex items-center justify-center">
           <img
-            src="/manus-storage/hero-bg_04af0095.jpg"
-            alt="HLS Security — Advanced electronic security systems"
-            className="w-full h-full object-cover opacity-40"
+            src="/manus-storage/hero-banner_a1dfa66c.png"
+            alt="HLS Security — Smart Security. 24/7 Monitoring. Rapid Response."
+            className="w-full h-full object-cover object-[center_55%]"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0B0B0B]/60 via-[#0B0B0B]/80 to-[#0B0B0B]" />
-          <div className="absolute inset-0 mesh-bg" />
         </div>
 
-        {/* Animated scan line */}
-        <div className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#CC0000]/30 to-transparent" style={{ animation: "scan-line 8s linear infinite" }} />
-
-        <div className="container relative z-10 pt-20 pb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
-            className="max-w-4xl"
-          >
-            {/* Hero Logo */}
-            <div className="mb-8">
-              <img
-                src="/manus-storage/HLSLogo-Transparent_2483afd8.webp"
-                alt="HLS Security Logo"
-                className="h-20 md:h-24 w-auto"
-              />
-            </div>
-            <div className="flex items-center gap-2 mb-6">
-              <span className="h-px w-8 bg-[#CC0000]" />
-              <span className="text-[#CC0000] text-sm font-heading font-semibold uppercase tracking-wider">
-                Complete Protection. Intelligent Security.
-              </span>
-            </div>
-            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6">
-              Professional Security.<br />
-              Intelligent Protection.<br />
-              <span className="text-gradient">24/7.</span>
-            </h1>
-            <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl mb-10">
-              Protect your home, business and assets with advanced intruder alarm systems, professional monitoring and rapid armed response.
-            </p>
-            <div className="flex flex-col sm:flex-row items-start gap-4">
-              <a
-                href="/contact"
-                className="btn-gradient inline-flex items-center gap-2 px-8 py-4 rounded-xl text-white text-base font-heading font-semibold group"
-              >
-                <Calendar className="w-5 h-5" />
-                Request Free Security Assessment
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </a>
-              <a
-                href="tel:+15551002470"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl glass text-white text-base font-heading font-semibold hover:border-[#CC0000]/30 transition-all duration-200"
-              >
-                <Phone className="w-5 h-5 text-[#CC0000]" />
-                Speak to a Security Expert
-              </a>
-            </div>
-          </motion.div>
-        </div>
+        {/* Subtle bottom gradient for smooth transition to next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0B0B0B] to-transparent" />
 
         {/* Scroll indicator */}
         <motion.div
