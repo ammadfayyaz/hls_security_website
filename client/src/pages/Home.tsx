@@ -44,12 +44,17 @@ export default function Home() {
     <SEO path="/" />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        {/* Background - Full Banner Image */}
+        {/* Background - Full Banner Image (Desktop) */}
         <div className="absolute inset-0 flex items-center justify-center">
           <img
             src="/manus-storage/hero-banner_a1dfa66c.png"
             alt="HLS Security — Smart Security. 24/7 Monitoring. Rapid Response."
-            className="w-full h-full object-cover object-[center_55%]"
+            className="w-full h-full object-cover object-[center_55%] hidden md:block"
+          />
+          <img
+            src="/manus-storage/hero-banner-mobile_fa91a6d3.png"
+            alt="HLS Security — Smart Security. 24/7 Monitoring. Armed Response."
+            className="w-full h-full object-cover object-[center_35%] md:hidden"
           />
         </div>
 
