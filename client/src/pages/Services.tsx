@@ -21,15 +21,15 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 const serviceImages: Record<string, string> = {
-  "Intruder Alarm Installation": "/manus-storage/alarm-system_c3f8ac60.jpg",
-  "24/7 Monitoring": "/manus-storage/monitoring-center_b1bab5d1.jpg",
-  "Armed Response": "/manus-storage/armed-response_514533d6.jpg",
-  "Preventive Maintenance": "/manus-storage/cctv-camera_4f29d979.jpg",
-  "Annual Maintenance Contracts": "/manus-storage/alarm-system_c3f8ac60.jpg",
-  "Remote Monitoring": "/manus-storage/monitoring-center_b1bab5d1.jpg",
-  "Emergency Repairs": "/manus-storage/armed-response_514533d6.jpg",
-  "Security Audits": "/manus-storage/cctv-camera_4f29d979.jpg",
-  "System Upgrades": "/manus-storage/home-automation_e8434804.jpg",
+  "Intruder Alarm Installation": "/images/services/alarm-system.jpg",
+  "24/7 Monitoring": "/images/services/monitoring-center.jpg",
+  "Armed Response": "/images/services/armed-response.jpg",
+  "Preventive Maintenance": "/images/services/cctv-camera.jpg",
+  "Annual Maintenance Contracts": "/images/services/alarm-system.jpg",
+  "Remote Monitoring": "/images/services/monitoring-center.jpg",
+  "Emergency Repairs": "/images/services/armed-response.jpg",
+  "Security Audits": "/images/services/cctv-camera.jpg",
+  "System Upgrades": "/images/products/home-automation.jpg",
 };
 
 export default function Services() {
@@ -158,7 +158,7 @@ export default function Services() {
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
                   <img
-                    src={serviceImages[service.title] || "/manus-storage/hero-bg_04af0095.jpg"}
+                    src={serviceImages[service.title] || "/images/backgrounds/hero-bg.jpg"}
                     alt={service.title}
                     className="w-full h-full object-cover"
                   />

@@ -51,7 +51,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <img
-              src="/manus-storage/HLSLogo-Transparent_2483afd8.webp"
+              src="/images/logo/hls-logo.png"
               alt="HLS Security"
               className="h-12 w-auto transition-transform group-hover:scale-105"
             />
@@ -138,7 +138,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="lg:col-span-2">
               <Link href="/" className="inline-block mb-4">
                 <img
-                  src="/manus-storage/HLSLogo-Transparent_2483afd8.webp"
+                  src="/images/logo/hls-logo.png"
                   alt="HLS Security"
                   className="h-14 w-auto"
                 />

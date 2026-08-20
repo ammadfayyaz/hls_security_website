@@ -21,12 +21,12 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 const categoryImages: Record<string, string> = {
-  "Intruder Alarm Systems": "/manus-storage/product-control-panel_0dae52ff.png",
-  "CCTV Systems": "/manus-storage/product-ptz-camera_3d15e3b3.png",
-  "Electric Fence": "/manus-storage/product-energizer_8348abe5.png",
-  "Fire Detection": "/manus-storage/product-smoke-detector_1fb36b49.png",
-  "Gate Automation": "/manus-storage/gate-automation_f3863f32.jpg",
-  "Home Automation": "/manus-storage/home-automation_e8434804.jpg",
+  "Intruder Alarm Systems": "/images/products/product-control-panel_0dae52ff.jpg",
+  "CCTV Systems": "/images/products/product-ptz-camera_3d15e3b3.jpg",
+  "Electric Fence": "/images/products/product-energizer_8348abe5.jpg",
+  "Fire Detection": "/images/products/product-smoke-detector_1fb36b49.jpg",
+  "Gate Automation": "/images/products/gate-automation.jpg",
+  "Home Automation": "/images/products/home-automation.jpg",
 };
 
 export default function Products() {
@@ -156,7 +156,7 @@ export default function Products() {
               className="relative rounded-2xl overflow-hidden h-64 lg:h-80"
             >
               <img
-                src={categoryImages[category.name] || "/manus-storage/hero-bg_04af0095.jpg"}
+                src={categoryImages[category.name] || "/images/backgrounds/hero-bg.jpg"}
                 alt={category.name}
                 className="w-full h-full object-cover"
               />
